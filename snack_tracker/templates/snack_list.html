@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+
+{%block navigation %}
+
+<nav>
+
+    <a href="{% url 'home' %}">Home Page</a>
+
+</nav>
+
+{% endblock navigation %}
+
+
+{%block content %}
+
+<div class="content">
+
+    <h3>Snacks Menu</h3>
+
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Impedit, quibusdam possimus perspiciatis maxime iste delectus quod perferendis,
+        reprehenderit dicta vero praesentium veniam recusandae! Deserunt officiis ad tempora impedit! Vero, temporibus.
+    </h4>
+
+
+    <div class="col">
+
+        <h3> Snacks</h3>
+        {% for snack in object_list  %}
+        <div class="desc">
+
+            <h3> {{ snack.name}} : </h3>
+            <h3>{{snack.description}}</h3>
+        </div>
+        {% endfor %}
+
+    </div>
+
+
+
+</div>
+
+{% endblock content %}
+
+
+{% block footer %}
+
+<div class="footer">
+
+    <h3>Nothing Special here</h3>
+</div>
+
+{% endblock footer%}

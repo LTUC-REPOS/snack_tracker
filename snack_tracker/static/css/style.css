@@ -1,0 +1,42 @@
+
+nav {
+    text-align:  center;
+    background-color: rgb(165, 136, 136);
+    padding: 1vw;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(46, 41, 41);
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+.home {
+    min-height: 70vh;
+    padding: 2vw;
+    text-align: center;
+}
+
+.footer {
+    padding: 1vw;
+    text-align: center;
+    background-color: rgb(165, 136, 136);
+}
+
+.content {
+    min-height: 70vh;
+    padding: 2vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+
+}
+
+.desc {
+    display: flex;
+    justify-content: center;
+}
