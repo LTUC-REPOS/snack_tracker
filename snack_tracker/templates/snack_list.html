@@ -30,8 +30,10 @@
         {% for snack in object_list  %}
         <div class="desc">
 
-            <h3> {{ snack.name}} : </h3>
-            <h3>{{snack.description}}</h3>
+            <a href="{% url 'snack' snack.id %}">
+                {{ snack.name }}
+            </a>
+
         </div>
         {% endfor %}
 
